@@ -1,0 +1,29 @@
+.word-space > .red {
+    background-color: green;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row > .orange {
+    background-color: orange;
+    height: 70vh;
+    padding: auto;
+    margin: auto
+}
+
+.theme-animation {
+    height: 60vh;
+    background-color: blue;
+}
+
+.theme-image {
+    height: 40vh;
+    background-color: pink
+}
+
+.current-word {
+    font-size: 30px;
+    line-height: 2em;
+}
