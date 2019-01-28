@@ -4,34 +4,18 @@ import { Row } from '../../CPManager'
 export default class WordSpace extends Component {
 
     state = {
-        word: '',
-        theme: 'default'
-    }
-
-
-    wordGen = (word) => {
-            console.log("Guess: ", word)
-            const wordGen = /^[/a-z0-9]*$/i
-            const blank = '_ '
-            let newWord = ''
-            for (let letter of word){
-                newWord += (letter.replace(wordGen, blank))
-            }
-            console.log(newWord)
-            this.setState({
-                word: newWord
-            })
+        theme: this.props.theme
     }
 
     componentDidMount = () => {
-        this.wordGen(this.props.word)
-        this.props.theme ? this.setState({ theme: 'default'}) : this.setState({ theme: this.props.theme })
+        this.props.wordGen(this.props.word)
+        console.log('current theme: ' + this.state.theme)
     }
 
     render(){
         return (
             <Row className={this.props.theme}>
-                <p className='current-word'>{this.state.word}</p>
+                <p className='current-word'>{this.props.wordHolder}</p>
             </Row>
         )
     }

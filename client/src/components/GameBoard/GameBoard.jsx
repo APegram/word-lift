@@ -11,8 +11,9 @@ export default class GameBoard extends Component {
     this.wordGen = this.wordGen.bind(this);
   }
   state = {
-    word: '',
-    theme: 'default',
+    word: 'jerry',
+    wordHolder: '',
+    theme: 'doctor',
     alphabet: [
       "A",
       "B",
@@ -41,31 +42,61 @@ export default class GameBoard extends Component {
       "Y",
       "Z"
     ],
-    isFlipped: false,
+    reset: false
   };
 
-  handleClick = event => {
-    event.preventDefault();
-    console.log('test')
-    this.setState({ isFlipped: true });
+  handleClick = (letter) => {
+    this.setState({ letterClicked: letter });
+    this.checkGuess(letter)
+  }
+
+  checkGuess = (letter) => {
+    letter = letter.toLowerCase();
+    let word = this.state.word
+    let currentWord = this.state.wordHolder
+    if (typeof word === 'string'){
+      word = word.split('')
+    }
+    if (typeof currentWord === 'string'){
+      currentWord = currentWord.split('')
+    }
+    for (let char in word){
+      if (word[char] === letter){
+        currentWord[char] = letter
+      }
+    }
+    this.setState({
+      wordHolder: currentWord
+    })
+    if (word.join('') === currentWord.join('')){
+      setTimeout(this.nextRound, 1000)
+    }
+  }
+
+  nextRound = () => {
+    this.wordGen('new world')
+    this.setState({
+      reset: true
+    })
+
   }
 
   wordGen = word => {
     const wordGen = /^[/a-z0-9]*$/i
-    const blank = '_ '
+    const blank = '-'
     let newWord = ''
     for (let letter of word){
         newWord += (letter.replace(wordGen, blank))
       }
-    console.log(newWord)
     this.setState({
-      word: newWord
+      wordHolder: newWord
     })
     console.log("Guess: ", this.state.word)
+    console.log(newWord)
   }
 
   render() {
-    const { alphabet, isFlipped, word } = this.state;
+    const { alphabet, isFlipped, word, wordHolder, theme, reset } = this.state;
 
     return (
       <Container fluid className="game-board">
@@ -77,13 +108,13 @@ export default class GameBoard extends Component {
           <Col size="sm-9" className="alpha-town">
             <Row className="word-space">
               <Col size="sm-12" className="red">
-                <WordSpace wordGen={this.wordGen} word="Darkness" />
+                <WordSpace theme={theme} wordGen={this.wordGen} word={word} wordHolder={wordHolder}/>
               </Col>
             </Row>
             <Row>
               <Col size="sm-12" className="orange">
                 {alphabet.map(letter => (
-                  <LetterTile onClick={this.handleClick} isFlipped={isFlipped} custom={{letter: letter, word: word}}>{letter}</LetterTile>
+                  <LetterTile onClick={this.handleClick} isFlipped={isFlipped} reset={reset} word={word} letter={letter} wordGen={this.wordGen}>{letter}</LetterTile>
                 ))}
               </Col>
             </Row>

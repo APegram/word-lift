@@ -5,7 +5,7 @@ class CardContent extends Component {
     render() {
         return(
 
-            <div className={this.props.className} custom-letter={this.props.custom}>
+            <div className={this.props.className} letter={this.props.letter}>
                 {this.props.children}
             </div>
         )
