@@ -8,7 +8,7 @@ export default class WordSpace extends Component {
     }
 
     componentDidMount = () => {
-        this.props.wordGen(this.props.word)
+        this.props.nextRound()
         console.log('current theme: ' + this.state.theme)
     }
 

@@ -1,7 +1,5 @@
-let wordBank = [
-    'one',
-    'two',
-    'three'
+export let doctorWho = [
+    'Doctor Who',
+    'David Tennant',
+    'Matt'
 ]
-
-export default wordBank

@@ -9,11 +9,12 @@ export default class GameBoard extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.wordGen = this.wordGen.bind(this);
+    this.nextRound = this.nextRound.bind(this);
   }
   state = {
-    word: 'jerry',
-    wordHolder: '',
-    theme: 'doctor',
+    word: "jerry",
+    wordHolder: "",
+    theme: "doctor",
     alphabet: [
       "A",
       "B",
@@ -41,61 +42,74 @@ export default class GameBoard extends Component {
       "X",
       "Y",
       "Z"
-    ],
-    reset: false,
-    wordBank: []
+    ]
   };
 
-  handleClick = (letter) => {
+  handleClick = letter => {
     this.setState({ letterClicked: letter });
-    this.checkGuess(letter)
-  }
+    this.checkGuess(letter);
+    console.log(letter, this.state.reset)
+  };
 
-  checkGuess = (letter) => {
+  checkGuess = letter => {
     letter = letter.toLowerCase();
-    let word = this.state.word
-    let currentWord = this.state.wordHolder
-    for (let char in word){
-      if (word[char] === letter){
-        currentWord[char] = letter
+    let word = this.state.word;
+    let currentWord = this.state.wordHolder;
+    for (let char in word) {
+      if (word[char] === letter) {
+        currentWord[char] = letter;
       }
     }
     this.setState({
       wordHolder: currentWord
-    })
-    if (word === currentWord.join('')){
-      setTimeout(this.nextRound, 1000)
+    });
+    if (word === currentWord.join("")) {
+      this.nextRound();
     }
-  }
+  };
+
+  // changeTheme = (theme) => {
+  //     this.setState({
+  //       theme: 'harry-potter'
+  //     })
+  // }
 
   nextRound = () => {
+    // this.changeTheme()
     switch (this.state.theme) {
-      case 'doctor':
-        
-
+      case "doctor":
+        this.setState({
+          wordBank: require("../../wordData").doctorWho
+        });
+        break;
+      case "harry-potter":
+        this.setState({
+          wordBank: require("../../wordData").harryPotter
+        });
+        break;
     }
+    this.wordGen(this.state.wordBank);
+    console.log(this.state)
+  };
 
-    this.wordGen('new world')
+  wordGen = words => {
+    console.log(words)
+    // let word = words[Math.floor(Math.random()*words.length)]
+    const wordGen = /^[/a-z0-9]*$/i;
+    const blank = "-";
+    let newWord = "";
+    for (let letter of 'piece') {
+      newWord += letter.replace(wordGen, blank);
+    }
+    newWord = newWord.split("");
     this.setState({
-      reset: true
-    })
-
-  }
-
-  wordGen = word => {
-    const wordGen = /^[/a-z0-9]*$/i
-    const blank = '-'
-    let newWord = ''
-    for (let letter of word){
-        newWord += (letter.replace(wordGen, blank))
-      }
-    newWord = newWord.split('')
-    this.setState({
-      wordHolder: newWord
-    })
-    console.log("Guess: ", this.state.word)
-    console.log(newWord)
-  }
+      wordHolder: newWord,
+      reset: false
+    });
+    console.log("Guess: ", this.state.word);
+    console.log(newWord);
+    console.log(this.state.reset)
+  };
 
   render() {
     const { alphabet, isFlipped, word, wordHolder, theme, reset } = this.state;
@@ -110,13 +124,29 @@ export default class GameBoard extends Component {
           <Col size="sm-9" className="alpha-town">
             <Row className="word-space">
               <Col size="sm-12" className="red">
-                <WordSpace theme={theme} wordGen={this.wordGen} word={word} wordHolder={wordHolder}/>
+                <WordSpace
+                  theme={theme}
+                  wordGen={this.wordGen}
+                  nextRound={this.nextRound}
+                  word={word}
+                  wordHolder={wordHolder}
+                />
               </Col>
             </Row>
             <Row>
               <Col size="sm-12" className="orange">
                 {alphabet.map(letter => (
-                  <LetterTile onClick={this.handleClick} isFlipped={isFlipped} reset={reset} word={word} letter={letter} wordGen={this.wordGen}>{letter}</LetterTile>
+                  <LetterTile
+                    key={letter}
+                    onClick={this.handleClick}
+                    isFlipped={isFlipped}
+                    reset={reset}
+                    word={word}
+                    letter={letter}
+                    wordGen={this.wordGen}
+                  >
+                    {letter}
+                  </LetterTile>
                 ))}
               </Col>
             </Row>

@@ -17,10 +17,13 @@ export default class LetterTile extends Component {
   }
 
   render() {
-    const reset = this.props.reset;
-    let frontORback = this.state.isFlipped ? "flipped" : "";
+    const reset = false;
+    
+    let frontORback =  this.state.isFlipped ? "flipped" : "";
     if (reset){
-      frontORback = ""
+      this.setState({
+        isFlipped: false
+      })
     }
 
     return (      
