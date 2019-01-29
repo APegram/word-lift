@@ -42,7 +42,8 @@ export default class GameBoard extends Component {
       "Y",
       "Z"
     ],
-    reset: false
+    reset: false,
+    wordBank: []
   };
 
   handleClick = (letter) => {
@@ -54,12 +55,6 @@ export default class GameBoard extends Component {
     letter = letter.toLowerCase();
     let word = this.state.word
     let currentWord = this.state.wordHolder
-    if (typeof word === 'string'){
-      word = word.split('')
-    }
-    if (typeof currentWord === 'string'){
-      currentWord = currentWord.split('')
-    }
     for (let char in word){
       if (word[char] === letter){
         currentWord[char] = letter
@@ -68,12 +63,18 @@ export default class GameBoard extends Component {
     this.setState({
       wordHolder: currentWord
     })
-    if (word.join('') === currentWord.join('')){
+    if (word === currentWord.join('')){
       setTimeout(this.nextRound, 1000)
     }
   }
 
   nextRound = () => {
+    switch (this.state.theme) {
+      case 'doctor':
+        
+
+    }
+
     this.wordGen('new world')
     this.setState({
       reset: true
@@ -88,6 +89,7 @@ export default class GameBoard extends Component {
     for (let letter of word){
         newWord += (letter.replace(wordGen, blank))
       }
+    newWord = newWord.split('')
     this.setState({
       wordHolder: newWord
     })
