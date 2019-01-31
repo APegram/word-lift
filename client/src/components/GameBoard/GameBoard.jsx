@@ -46,7 +46,9 @@ export default class GameBoard extends Component {
       ""
     ],
     reset: false,
-    wordBank: require("../../wordData").doctorWho
+    wordBank: require("../../wordData").doctorWho,
+    letterHolder: 'letter-holder',
+    showPicture: false
   };
 
   handleClick = letter => {
@@ -67,7 +69,7 @@ export default class GameBoard extends Component {
       wordHolder: currentWord
     });
     if (word === currentWord.join("")) {
-      setTimeout(this.reset, 2000);
+      setTimeout(this.showPicture, 1000);
     }
   };
 
@@ -109,12 +111,21 @@ export default class GameBoard extends Component {
     this.setState({
       reset: false
     });
-    console.log(this.state.theme)
   };
+
+  showPicture = () => {
+    this.setState({
+      letterHolder: 'show-picture',
+      showPicture: true
+    })
+    setTimeout(this.reset, 3000)
+  }
 
   reset = () => {
     this.setState({
-      reset: true
+      reset: true,
+      letterHolder: 'letter-holder',
+      showPicture: false
     });
     this.nextRound();
   };
@@ -173,6 +184,8 @@ export default class GameBoard extends Component {
                     letter={letter}
                     wordGen={this.wordGen}
                     reset={reset}
+                    letterHolder={this.state.letterHolder}
+                    showPicture={this.state.showPicture}
                   >
                     {letter}
                   </LetterTile>

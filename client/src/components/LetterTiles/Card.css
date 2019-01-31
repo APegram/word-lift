@@ -10,24 +10,38 @@
   perspective: 700;
 }
 
+.show-picture{
+  float: left;
+  width: 60px;
+  height: 60px;
+  transition: all 1.0s ease;
+  transform-style: preserve-3d;
+  margin: 0px;
+  perspective: 700;
+}
+
 .flipped {
   transform: rotateY(-180deg);
 }
 
-.letter-holder > .back {
+.letter-holder > .back,
+.show-picture > .back {
   transform: rotateY(180deg);
   background-image: url('../../images/DocWhoTile.jpg');
   padding-top: 10px;
 }
 
-.letter-holder > .front{
+.letter-holder > .front,
+.show-picture > .front{
   background-color: rgb(50, 112, 186);
   align-items: center;
   justify-content: center;
 }
 
 .letter-holder > .front,
-.letter-holder > .back {
+.letter-holder > .back,
+.show-picture > .back,  
+.show-picture > .front{
   position: absolute;
   width: 60px;
   height: 60px;
@@ -37,6 +51,9 @@
   box-shadow: 0px 2px 5px gray;
 }
 
+.show-picture > .back{
+  border-radius: 0px;
+}
 .alpha-image {
   border-radius: 10px;
 }
@@ -75,7 +92,7 @@
 }
 
 .G{
-  background-position: -360px 0px;
+  background-position: -px 0px;
 }
 
 .H{
@@ -135,21 +152,21 @@
 }
 
 .V{
-  background-position: 0px -180px;
-}
-
-.W{
   background-position: -60px -180px;
 }
 
-.X{
+.W{
   background-position: -120px -180px;
 }
 
-.Y{
+.X{
   background-position: -180px -180px;
 }
 
-.Z{
+.Y{
   background-position: -240px -180px;
+}
+
+.Z{
+  background-position: -300px -180px;
 }
