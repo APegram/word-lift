@@ -16,7 +16,7 @@
 
 .letter-holder > .back {
   transform: rotateY(180deg);
-  background: blue;
+  background-image: url('../../images/DocWhoTile.jpg');
   padding-top: 10px;
 }
 
@@ -46,4 +46,110 @@
   color: white;
   margin-bottom: 0;
   font-family: 'Righteous', cursive;
+}
+
+/*Setting Up Pixel Images*/
+
+.A{
+  background-position: 0px 0px;
+}
+
+.B{
+  background-position: -60px 0px;
+}
+
+.C{
+  background-position: -120px 0px;
+}
+
+.D{
+  background-position: -180px 0px;
+}
+
+.E{
+  background-position: -240px 0px;
+}
+
+.F{
+  background-position: -300px 0px;
+}
+
+.G{
+  background-position: -360px 0px;
+}
+
+.H{
+  background-position: 0px -60px;
+}
+
+.I{
+  background-position: -60px -60px;
+}
+
+.J{
+  background-position: -120px -60px;
+}
+
+.K{
+  background-position: -180px -60px;
+}
+
+.L{
+  background-position: -240px -60px;
+}
+
+.N{
+  background-position: -300px -60px;
+}
+
+.O{
+  background-position: -360px -60px;
+}
+
+.P{
+  background-position: 0px -120px;
+}
+
+.Q{
+  background-position: -60px -120px;
+}
+
+.Q{
+  background-position: -120px -120px;
+}
+
+.R{
+  background-position: -180px -120px;
+}
+
+.S{
+  background-position: -240px -120px;
+}
+
+.T{
+  background-position: -300px -120px;
+}
+
+.U{
+  background-position: -360px -120px;
+}
+
+.V{
+  background-position: 0px -180px;
+}
+
+.W{
+  background-position: -60px -180px;
+}
+
+.X{
+  background-position: -120px -180px;
+}
+
+.Y{
+  background-position: -180px -180px;
+}
+
+.Z{
+  background-position: -240px -180px;
 }
