@@ -12,7 +12,7 @@ export default class GameBoard extends Component {
     this.nextRound = this.nextRound.bind(this);
   }
   state = {
-    word: "jerry",
+    word: "",
     wordHolder: "",
     theme: "doctor",
     alphabet: [
@@ -31,7 +31,7 @@ export default class GameBoard extends Component {
       "M",
       "N",
       "O",
-      "p",
+      "P",
       "Q",
       "R",
       "S",
@@ -42,13 +42,14 @@ export default class GameBoard extends Component {
       "X",
       "Y",
       "Z"
-    ]
+    ],
+    reset: false,
+    wordBank: require("../../wordData").doctorWho
   };
 
   handleClick = letter => {
     this.setState({ letterClicked: letter });
     this.checkGuess(letter);
-    console.log(letter, this.state.reset)
   };
 
   checkGuess = letter => {
@@ -64,18 +65,27 @@ export default class GameBoard extends Component {
       wordHolder: currentWord
     });
     if (word === currentWord.join("")) {
-      this.nextRound();
+      setTimeout(this.reset, 2000);
     }
   };
 
-  // changeTheme = (theme) => {
-  //     this.setState({
-  //       theme: 'harry-potter'
-  //     })
-  // }
+  changeTheme = theme => {
+    switch (this.state.theme) {
+      case "harry-potter":
+        this.setState({
+          theme: "doctor"
+        });
+        break;
+      default:
+        this.setState({
+          theme: "harry-potter"
+        });
+        break;
+    }
+  };
 
   nextRound = () => {
-    // this.changeTheme()
+    this.changeTheme();
     switch (this.state.theme) {
       case "doctor":
         this.setState({
@@ -87,28 +97,43 @@ export default class GameBoard extends Component {
           wordBank: require("../../wordData").harryPotter
         });
         break;
+      default:
+        this.setState({
+          wordBank: require("../../wordData").doctorWho
+        });
+        break;
     }
     this.wordGen(this.state.wordBank);
-    console.log(this.state)
+    this.setState({
+      reset: false
+    });
+    console.log(this.state.theme)
+  };
+
+  reset = () => {
+    this.setState({
+      reset: true
+    });
+    this.nextRound();
   };
 
   wordGen = words => {
-    console.log(words)
-    // let word = words[Math.floor(Math.random()*words.length)]
+    let word = words[Math.floor(Math.random() * words.length)].toLowerCase();
     const wordGen = /^[/a-z0-9]*$/i;
     const blank = "-";
     let newWord = "";
-    for (let letter of 'piece') {
+    for (let letter of word) {
       newWord += letter.replace(wordGen, blank);
     }
     newWord = newWord.split("");
     this.setState({
-      wordHolder: newWord,
-      reset: false
+      word: word,
+      wordHolder: newWord
     });
-    console.log("Guess: ", this.state.word);
-    console.log(newWord);
-    console.log(this.state.reset)
+  };
+
+  componentDidMount = () => {
+    this.nextRound();
   };
 
   render() {
@@ -140,10 +165,10 @@ export default class GameBoard extends Component {
                     key={letter}
                     onClick={this.handleClick}
                     isFlipped={isFlipped}
-                    reset={reset}
                     word={word}
                     letter={letter}
                     wordGen={this.wordGen}
+                    reset={reset}
                   >
                     {letter}
                   </LetterTile>

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
 .letter-holder{
   float: left;
   width: 60px;
@@ -18,6 +20,11 @@
   padding-top: 10px;
 }
 
+.letter-holder > .front{
+  background-color: rgb(50, 112, 186);
+  align-items: center;
+  justify-content: center;
+}
 
 .letter-holder > .front,
 .letter-holder > .back {
@@ -32,4 +39,11 @@
 
 .alpha-image {
   border-radius: 10px;
+}
+
+.letters{
+  font-size: 28px;
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Righteous', cursive;
 }

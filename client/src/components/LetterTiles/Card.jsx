@@ -6,7 +6,7 @@ import CardContent from './CardContent'
 export default class LetterTile extends Component {
 
   state = {
-    isFlipped: false
+    isFlipped: false,
   }
 
   onClick = () => {
@@ -16,20 +16,23 @@ export default class LetterTile extends Component {
     this.props.onClick(this.props.letter)
   }
 
+  componentDidUpdate(prevProps) {
+  if (this.props.reset !== prevProps.reset) {
+    if (this.props.reset && this.state.isFlipped) {
+      this.setState({ isFlipped: false });
+    }
+  }
+}
+
   render() {
-    const reset = false;
     
     let frontORback =  this.state.isFlipped ? "flipped" : "";
-    if (reset){
-      this.setState({
-        isFlipped: false
-      })
-    }
 
     return (      
       <CardContent className={`${frontORback} letter-holder`} letter={this.props.letter}>
           <CardFront onClick={this.onClick}>
-            <img className="alpha-image" src="https://via.placeholder.com/60x60" alt="some"/>
+            {/* <img className="alpha-image" src="https://via.placeholder.com/60x60" alt="some"/> */}
+            <p className='letters'>{this.props.letter}</p>
           </CardFront>
           <CardBack>
               
