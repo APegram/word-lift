@@ -9,8 +9,10 @@
 .row > .orange {
     background-color: orange;
     height: 70vh;
-    padding: auto;
-    margin: auto
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .theme-animation {

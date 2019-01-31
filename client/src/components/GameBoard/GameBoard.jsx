@@ -37,13 +37,11 @@ export default class GameBoard extends Component {
       "S",
       "T",
       "U",
-      "",
       "V",
       "W",
       "X",
       "Y",
-      "Z",
-      ""
+      "Z"
     ],
     reset: false,
     wordBank: require("../../wordData").doctorWho,
