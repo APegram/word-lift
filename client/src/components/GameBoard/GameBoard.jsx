@@ -37,11 +37,13 @@ export default class GameBoard extends Component {
       "S",
       "T",
       "U",
+      "",
       "V",
       "W",
       "X",
       "Y",
-      "Z"
+      "Z",
+      ""
     ],
     reset: false,
     wordBank: require("../../wordData").doctorWho
@@ -125,7 +127,9 @@ export default class GameBoard extends Component {
     for (let letter of word) {
       newWord += letter.replace(wordGen, blank);
     }
-    newWord = newWord.split("");
+    console.log(newWord)
+    newWord = newWord.split("")
+    console.log(newWord)
     this.setState({
       word: word,
       wordHolder: newWord
