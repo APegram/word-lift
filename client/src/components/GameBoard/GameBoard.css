@@ -16,13 +16,8 @@
 }
 
 .theme-animation {
-    height: 60vh;
+    height: 100vh;
     background-color: blue;
-}
-
-.theme-image {
-    height: 40vh;
-    background-color: pink
 }
 
 .current-word {

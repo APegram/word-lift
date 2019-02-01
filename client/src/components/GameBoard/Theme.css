@@ -1,0 +1,23 @@
+.doctor_who{
+    font-size: 28px;
+  margin-bottom: 0;
+  font-family: 'Righteous', cursive;
+}
+
+.title{
+    -webkit-animation: color-change 20s infinite alternate;
+}
+
+@-webkit-keyframes color-change{
+    0%{color: red}
+    10%{color:blue}
+    20%{color:green}
+30%{color:yellow}
+    40%{color:orange}
+    50%{color:purple}
+    60%{color:white}
+    70%{color:teal}
+    80%{color:navajowhite}
+    90%{color:yellowgreen}
+    100%{color:goldenrod}
+}

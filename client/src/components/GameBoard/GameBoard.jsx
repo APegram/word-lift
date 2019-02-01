@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "../../CPManager";
 import "./GameBoard.css";
+import "./Theme.css";
 import WordSpace from "./WordSpace";
 import LetterTile from "../LetterTiles/Card";
 
@@ -14,7 +15,7 @@ export default class GameBoard extends Component {
   state = {
     word: "",
     wordHolder: "",
-    theme: "doctor",
+    theme: "doctor who",
     alphabet: [
       "A",
       "B",
@@ -79,12 +80,12 @@ export default class GameBoard extends Component {
     switch (this.state.theme) {
       case "harry-potter":
         this.setState({
-          theme: "doctor"
+          theme: "doctor who"
         });
         break;
       default:
         this.setState({
-          theme: "harry-potter"
+          theme: "harry potter"
         });
         break;
     }
@@ -118,7 +119,7 @@ export default class GameBoard extends Component {
   shuffle = () => {
     let wordBank;
     switch (this.state.theme) {
-      case "doctor":
+      case "doctor-who":
           wordBank = require("../../wordData").doctorWho
         break;
       case "harry-potter":
@@ -167,19 +168,22 @@ export default class GameBoard extends Component {
 
   render() {
     const { alphabet, isFlipped, word, wordHolder, theme, reset } = this.state;
+    let topic = theme.toUpperCase().split('')
+    console.log(topic)
 
     return (
       <Container fluid className="game-board">
         <Row>
-          <Col size="sm-3" className="blue">
-            <Row className="theme-animation">Theme Animation</Row>
-            <Row className="theme-image">Theme Image</Row>
+          <Col size="sm-3" className="blue theme-animation">
+            {topic.map(letter => (
+              <p className={`${theme.replace(' ', '_')} title`}>{letter}</p>
+            ))}
           </Col>
           <Col size="sm-9" className="alpha-town">
             <Row className="word-space">
               <Col size="sm-12" className="red">
                 <WordSpace
-                  theme={theme}
+                  theme={theme.replace(' ', '_')}
                   wordGen={this.wordGen}
                   nextRound={this.nextRound}
                   word={word}
