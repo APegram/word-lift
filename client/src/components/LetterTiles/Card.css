@@ -27,7 +27,6 @@
 .letter-holder > .back,
 .show-picture > .back {
   transform: rotateY(180deg);
-  background-image: url('../../images/DocWhoTile.jpg');
   padding-top: 10px;
 }
 

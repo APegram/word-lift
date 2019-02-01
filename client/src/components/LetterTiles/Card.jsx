@@ -41,7 +41,7 @@ export default class LetterTile extends Component {
             {/* <img className="alpha-image" src="https://via.placeholder.com/60x60" alt="some"/> */}
             <p className='letters'>{this.props.letter}</p>
           </CardFront>
-          <CardBack letter={this.props.letter}>
+          <CardBack letter={`${this.props.letter} ${this.props.image}`}>
               
           </CardBack>
       </CardContent>

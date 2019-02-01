@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Card.css";
+import "./ImageCatalogue.css";
 
 class CardContent extends Component {
     render() {

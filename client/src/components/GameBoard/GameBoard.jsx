@@ -44,9 +44,11 @@ export default class GameBoard extends Component {
       "Z"
     ],
     reset: false,
-    wordBank: require("../../wordData").doctorWho,
-    letterHolder: 'letter-holder',
-    showPicture: false
+    wordBank: [],
+    letterHolder: "letter-holder",
+    showPicture: false,
+    image: "",
+    wordNumber: 0
   };
 
   handleClick = letter => {
@@ -55,7 +57,6 @@ export default class GameBoard extends Component {
   };
 
   checkGuess = letter => {
-    letter = letter.toLowerCase();
     let word = this.state.word;
     let currentWord = this.state.wordHolder;
     for (let char in word) {
@@ -67,6 +68,9 @@ export default class GameBoard extends Component {
       wordHolder: currentWord
     });
     if (word === currentWord.join("")) {
+      this.setState({
+        wordNumber: (this.state.wordNumber + 1)
+      })
       setTimeout(this.showPicture, 1000);
     }
   };
@@ -87,24 +91,7 @@ export default class GameBoard extends Component {
   };
 
   nextRound = () => {
-    this.changeTheme();
-    switch (this.state.theme) {
-      case "doctor":
-        this.setState({
-          wordBank: require("../../wordData").doctorWho
-        });
-        break;
-      case "harry-potter":
-        this.setState({
-          wordBank: require("../../wordData").harryPotter
-        });
-        break;
-      default:
-        this.setState({
-          wordBank: require("../../wordData").doctorWho
-        });
-        break;
-    }
+    // this.changeTheme();
     this.wordGen(this.state.wordBank);
     this.setState({
       reset: false
@@ -113,40 +100,69 @@ export default class GameBoard extends Component {
 
   showPicture = () => {
     this.setState({
-      letterHolder: 'show-picture',
+      letterHolder: "show-picture",
       showPicture: true
-    })
-    setTimeout(this.reset, 3000)
-  }
+    });
+    setTimeout(this.reset, 3000);
+  };
 
   reset = () => {
     this.setState({
       reset: true,
-      letterHolder: 'letter-holder',
+      letterHolder: "letter-holder",
       showPicture: false
     });
     this.nextRound();
   };
 
+  shuffle = () => {
+    let wordBank;
+    switch (this.state.theme) {
+      case "doctor":
+          wordBank = require("../../wordData").doctorWho
+        break;
+      case "harry-potter":
+          wordBank = require("../../wordData").harryPotter
+        break;
+      default:
+          wordBank = require("../../wordData").doctorWho
+        break;
+    }
+    var wordCount = wordBank.length;
+    var wordSelected;
+    var temp;
+    
+    while (wordCount > 0) {
+      wordSelected = Math.floor(Math.random() * wordCount);
+      wordCount--;
+      temp = wordBank[wordCount];
+      wordBank[wordCount] = wordBank[wordSelected];
+      wordBank[wordSelected] = temp;
+    }
+    this.setState({
+      wordBank: wordBank
+    });
+  };
+
   wordGen = words => {
-    let word = words[Math.floor(Math.random() * words.length)].toLowerCase();
+    let word = words[this.state.wordNumber].toUpperCase()
     const wordGen = /^[/a-z0-9]*$/i;
     const blank = "-";
     let newWord = "";
     for (let letter of word) {
       newWord += letter.replace(wordGen, blank);
     }
-    console.log(newWord)
-    newWord = newWord.split("")
-    console.log(newWord)
+    newWord = newWord.split("");
     this.setState({
       word: word,
+      image: word.toLowerCase().replace(" ", "-"),
       wordHolder: newWord
     });
   };
 
   componentDidMount = () => {
-    this.nextRound();
+    this.shuffle()
+    setTimeout(this.nextRound, 10)
   };
 
   render() {
@@ -184,6 +200,7 @@ export default class GameBoard extends Component {
                     reset={reset}
                     letterHolder={this.state.letterHolder}
                     showPicture={this.state.showPicture}
+                    image={this.state.image}
                   >
                     {letter}
                   </LetterTile>
