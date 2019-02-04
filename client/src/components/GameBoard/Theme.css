@@ -1,23 +1,34 @@
-.doctor_who{
-    font-size: 28px;
+.doctor_who {
+  font-size: 28px;
   margin-bottom: 0;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 }
 
-.title{
-    -webkit-animation: color-change 20s infinite alternate;
+
+
+.title {
+  -webkit-animation: color-change 24s infinite alternate;
+  text-align: center;
 }
 
-@-webkit-keyframes color-change{
-    0%{color: red}
-    10%{color:blue}
-    20%{color:green}
-30%{color:yellow}
-    40%{color:orange}
-    50%{color:purple}
-    60%{color:white}
-    70%{color:teal}
-    80%{color:navajowhite}
-    90%{color:yellowgreen}
-    100%{color:goldenrod}
+@-webkit-keyframes color-change {
+  0% {
+    color: red;
+  }
+  20% {
+    color: navajowhite;
+  }
+  40% {
+    color: teal;
+  }
+  60% {
+    color: navajowhite;
+  }
+  80% {
+    color: goldenrod;
+  }
+  100%{
+      color: navajowhite;
+  }
+
 }

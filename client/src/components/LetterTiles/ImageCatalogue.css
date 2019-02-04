@@ -1,39 +1,39 @@
-.doctor-who{
+.flipped > .doctor-who{
     background-image: url('../../images/Doctor_Who/doctorwho.jpg');
 }
 
-.david-tennant{
+.flipped > .david-tennant{
     background-image: url('../../images/Doctor_Who/david_tennant.jpg');
 }
 
-.matt-smith{
+.flipped > .matt-smith{
     background-image: url('../../images/Doctor_Who/matt_smith.jpg');
 }
 
-.tardis{
+.flipped > .tardis{
     background-image: url('../../images/Doctor_Who/tardis.jpg');
 }
 
-.daleks{
+.flipped > .daleks{
     background-image: url('../../images/Doctor_Who/dalek.jpg');
 }
 
-.cybermen{
+.flipped > .cybermen{
     background-image: url('../../images/Doctor_Who/cybermen.jpg');
 }
 
-.gallifrey{
+.flipped > .gallifrey{
     background-image: url('../../images/Doctor_Who/gallifrey.jpg');
 }
 
-.time-lord{
+.flipped > .time-lord{
     background-image: url('../../images/Doctor_Who/time_lord.jpg');
 }
 
-.the-master{
+.flipped > .the-master{
     background-image: url('../../images/Doctor_Who/the_master.jpg');
 }
 
-.companion{
+.flipped > .companion{
     background-image: url('../../images/Doctor_Who/companions.jpg');
 }

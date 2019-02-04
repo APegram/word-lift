@@ -49,7 +49,9 @@ export default class GameBoard extends Component {
     letterHolder: "letter-holder",
     showPicture: false,
     image: "",
-    wordNumber: 0
+    wordNumber: 0,
+    round: 1,
+    guessesLeft: 6
   };
 
   handleClick = letter => {
@@ -167,17 +169,28 @@ export default class GameBoard extends Component {
   };
 
   render() {
-    const { alphabet, isFlipped, word, wordHolder, theme, reset } = this.state;
+    const { alphabet, isFlipped, word, wordHolder, theme, reset, round, guessesLeft } = this.state;
     let topic = theme.toUpperCase().split('')
     console.log(topic)
 
     return (
       <Container fluid className="game-board">
         <Row>
-          <Col size="sm-3" className="blue theme-animation">
-            {topic.map(letter => (
-              <p className={`${theme.replace(' ', '_')} title`}>{letter}</p>
-            ))}
+          <Col size="sm-3" className={`${theme.replace(' ', '_')} side-board`}>
+            <Row className='theme-animation'>
+            <p className={`title`}>{topic}</p>
+            </Row>
+            <Row className='score-board'>
+              <Col size='sm-12' className='score-board-text'>
+                <p>Round: {round}</p>
+                <p>Guesses Left: {guessesLeft}</p>
+              </Col>
+            </Row>
+            <Row className='change-theme'>
+                <Col size='sm-12' className='theme-select'>
+                  <p className={theme.replace(' ', '-')}>Change Themes</p>
+                </Col>
+            </Row>
           </Col>
           <Col size="sm-9" className="alpha-town">
             <Row className="word-space">
