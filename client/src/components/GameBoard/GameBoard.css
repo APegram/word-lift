@@ -50,6 +50,24 @@
     color: white;
 }
 
-.game-board > .row {
+.game-board > .game-board-bg {
     background-image: linear-gradient(70deg, #0f0c29, #302b63, #24243e)
+}
+
+.game-board {
+    position: relative
+}
+
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    z-index: 3;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.show-modal{
+    display: flex;
 }

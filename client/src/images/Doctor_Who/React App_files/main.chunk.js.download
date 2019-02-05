@@ -1,0 +1,1970 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".App {\n  text-align: center;\n}\n\n.App-logo {\n  -webkit-animation: App-logo-spin infinite 20s linear;\n          animation: App-logo-spin infinite 20s linear;\n  height: 40vmin;\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@-webkit-keyframes App-logo-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n\n@keyframes App-logo-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/GameBoard.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/GameBoard/GameBoard.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".word-space > .red {\n    height: 30vh;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.row > .orange {\n    height: 70vh;\n    display: flex;\n    flex-wrap: wrap;\n    align-content: center;\n    justify-content: center;\n}\n\n.theme-animation {\n    height: 30vh;\n    align-items: center;\n}\n\n.current-word {\n    font-size: 30px;\n    line-height: 2em;\n    color: white;\n}\n\n.score-board {\n    height: 40vh;\n    align-items: center\n}\n\n.score-board-text{\n    text-align: center;\n    padding: 0;\n    color: white;\n}\n\n.change-theme{\n    height: 30vh;\n    align-items: center;\n}\n\n.theme-select {\n    padding: 0;\n    text-align: center;\n}\n\n\n.theme-select > .doctor-who {\n    color: white;\n}\n\n.game-board > .game-board-bg {\n    background-image: linear-gradient(70deg, #0f0c29, #302b63, #24243e)\n}\n\n.game-board {\n    position: relative\n}\n\n.modal {\n    position: absolute;\n    top: 0px;\n    left: 15px;\n    z-index: 1000;\n    background-color: white;\n    height: 100vh;\n    width: 100vw;\n}\n\n.show-modal{\n    display: flex;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/Theme.css":
+/*!***********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/GameBoard/Theme.css ***!
+  \***********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".doctor_who {\r\n  font-size: 28px;\r\n  margin-bottom: 0;\r\n  font-family: \"Righteous\", cursive;\r\n}\r\n\r\n\r\n\r\n.title {\r\n  -webkit-animation: color-change 24s infinite alternate;\r\n  text-align: center;\r\n}\r\n\r\n@-webkit-keyframes color-change {\r\n  0% {\r\n    color: red;\r\n  }\r\n  20% {\r\n    color: navajowhite;\r\n  }\r\n  40% {\r\n    color: teal;\r\n  }\r\n  60% {\r\n    color: navajowhite;\r\n  }\r\n  80% {\r\n    color: goldenrod;\r\n  }\r\n  100%{\r\n      color: navajowhite;\r\n  }\r\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/Card.css":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/LetterTiles/Card.css ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
+
+// module
+exports.push([module.i, ".letter-holder{\n  float: left;\n  width: 60px;\n  height: 60px;\n  transition: all 0.6s ease;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n  margin: 2.5px;\n  -webkit-perspective: 700;\n          perspective: 700;\n}\n\n.show-picture{\n  float: left;\n  width: 60px;\n  height: 60px;\n  transition: all 1.0s ease;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n  margin: 0px;\n  -webkit-perspective: 700;\n          perspective: 700;\n}\n\n.flipped {\n  -webkit-transform: rotateY(-180deg);\n          transform: rotateY(-180deg);\n}\n\n.letter-holder > .back,\n.show-picture > .back {\n  -webkit-transform: rotateY(180deg);\n          transform: rotateY(180deg);\n  padding-top: 10px;\n}\n\n.letter-holder > .front,\n.show-picture > .front{\n  background-color: rgb(50, 112, 186);\n  align-items: center;\n  justify-content: center;\n}\n\n.letter-holder > .front,\n.letter-holder > .back,\n.show-picture > .back,  \n.show-picture > .front{\n  position: absolute;\n  width: 60px;\n  height: 60px;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  border-radius: 10px;\n  display: flex;\n  box-shadow: 0px 2px 5px gray;\n}\n\n.show-picture > .back{\n  border-radius: 0px;\n}\n.alpha-image {\n  border-radius: 10px;\n}\n\n.letters{\n  font-size: 28px;\n  color: white;\n  margin-bottom: 0;\n  font-family: 'Righteous', cursive;\n}\n\n/*Setting Up Pixel Images*/\n\n.A{\n  background-position: 0px 0px;\n}\n\n.B{\n  background-position: -60px 0px;\n}\n\n.C{\n  background-position: -120px 0px;\n}\n\n.D{\n  background-position: -180px 0px;\n}\n\n.E{\n  background-position: -240px 0px;\n}\n\n.F{\n  background-position: -300px 0px;\n}\n\n.G{\n  background-position: -360px 0px;\n}\n\n.H{\n  background-position: 0px -60px;\n}\n\n.I{\n  background-position: -60px -60px;\n}\n\n.J{\n  background-position: -120px -60px;\n}\n\n.K{\n  background-position: -180px -60px;\n}\n\n.L{\n  background-position: -240px -60px;\n}\n\n.M{\n  background-position: -300px -60px\n}\n\n.N{\n  background-position: -360px -60px;\n}\n\n.O{\n  background-position: 0px -120px;\n}\n\n.P{\n  background-position: -60px -120px;\n}\n\n.Q{\n  background-position: -120px -120px;\n}\n\n.R{\n  background-position: -180px -120px;\n}\n\n.S{\n  background-position: -240px -120px;\n}\n\n.T{\n  background-position: -300px -120px;\n}\n\n.U{\n  background-position: -360px -120px;\n}\n\n.V{\n  background-position: -60px -180px;\n}\n\n.W{\n  background-position: -120px -180px;\n}\n\n.X{\n  background-position: -180px -180px;\n}\n\n.Y{\n  background-position: -240px -180px;\n}\n\n.Z{\n  background-position: -300px -180px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/ImageCatalogue.css":
+/*!**********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/LetterTiles/ImageCatalogue.css ***!
+  \**********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".flipped > .doctor-who{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/doctorwho.jpg */ "./src/images/Doctor_Who/doctorwho.jpg")) + ");\r\n}\r\n\r\n.flipped > .david-tennant{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/david_tennant.jpg */ "./src/images/Doctor_Who/david_tennant.jpg")) + ");\r\n}\r\n\r\n.flipped > .matt-smith{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/matt_smith.jpg */ "./src/images/Doctor_Who/matt_smith.jpg")) + ");\r\n}\r\n\r\n.flipped > .tardis{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/tardis.jpg */ "./src/images/Doctor_Who/tardis.jpg")) + ");\r\n}\r\n\r\n.flipped > .daleks{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/dalek.jpg */ "./src/images/Doctor_Who/dalek.jpg")) + ");\r\n}\r\n\r\n.flipped > .cybermen{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/cybermen.jpg */ "./src/images/Doctor_Who/cybermen.jpg")) + ");\r\n}\r\n\r\n.flipped > .gallifrey{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/gallifrey.jpg */ "./src/images/Doctor_Who/gallifrey.jpg")) + ");\r\n}\r\n\r\n.flipped > .time-lord{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/time_lord.jpg */ "./src/images/Doctor_Who/time_lord.jpg")) + ");\r\n}\r\n\r\n.flipped > .the-master{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/the_master.jpg */ "./src/images/Doctor_Who/the_master.jpg")) + ");\r\n}\r\n\r\n.flipped > .companion{\r\n    background-image: url(" + escape(__webpack_require__(/*! ../../images/Doctor_Who/companions.jpg */ "./src/images/Doctor_Who/companions.jpg")) + ");\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CPManager */ "./src/CPManager.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\App.js";
+
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _Component);
+
+  function App() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["GameBoard"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      });
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/CPManager.js":
+/*!**************************!*\
+  !*** ./src/CPManager.js ***!
+  \**************************/
+/*! exports provided: Landing, Col, Row, Container, GameBoard, ThemeModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _pages_Landing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/Landing */ "./src/pages/Landing.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Landing", function() { return _pages_Landing__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _components_Grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Grid */ "./src/components/Grid/index.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Col", function() { return _components_Grid__WEBPACK_IMPORTED_MODULE_1__["Col"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return _components_Grid__WEBPACK_IMPORTED_MODULE_1__["Row"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return _components_Grid__WEBPACK_IMPORTED_MODULE_1__["Container"]; });
+
+/* harmony import */ var _components_GameBoard_GameBoard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/GameBoard/GameBoard */ "./src/components/GameBoard/GameBoard.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GameBoard", function() { return _components_GameBoard_GameBoard__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _components_Modals_ThemeModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Modals/ThemeModal */ "./src/components/Modals/ThemeModal.jsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ThemeModal", function() { return _components_Modals_ThemeModal__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/components/GameBoard/GameBoard.css":
+/*!************************************************!*\
+  !*** ./src/components/GameBoard/GameBoard.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./GameBoard.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/GameBoard.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./GameBoard.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/GameBoard.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./GameBoard.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/GameBoard.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/GameBoard/GameBoard.jsx":
+/*!************************************************!*\
+  !*** ./src/components/GameBoard/GameBoard.jsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return GameBoard; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../CPManager */ "./src/CPManager.js");
+/* harmony import */ var _GameBoard_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./GameBoard.css */ "./src/components/GameBoard/GameBoard.css");
+/* harmony import */ var _GameBoard_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_GameBoard_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Theme_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Theme.css */ "./src/components/GameBoard/Theme.css");
+/* harmony import */ var _Theme_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Theme_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _WordSpace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./WordSpace */ "./src/components/GameBoard/WordSpace.jsx");
+/* harmony import */ var _LetterTiles_Card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../LetterTiles/Card */ "./src/components/LetterTiles/Card.jsx");
+
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\GameBoard\\GameBoard.jsx";
+
+
+
+
+
+
+
+var GameBoard =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(GameBoard, _Component);
+
+  function GameBoard(props) {
+    var _this;
+
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, GameBoard);
+
+    _this = Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(GameBoard).call(this, props));
+    _this.state = {
+      word: "",
+      wordHolder: "",
+      theme: "doctor who",
+      themes: ['doctor who', 'pokemon', 'harry potter'],
+      alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+      reset: false,
+      wordBank: [],
+      letterHolder: "letter-holder",
+      showPicture: false,
+      image: "",
+      wordNumber: 0,
+      round: 1,
+      guessesLeft: 6
+    };
+
+    _this.handleClick = function (letter) {
+      _this.setState({
+        letterClicked: letter
+      });
+
+      _this.checkGuess(letter);
+    };
+
+    _this.checkGuess = function (letter) {
+      var guessesLeft = _this.state.guessesLeft;
+      var word = _this.state.word;
+      var currentWord = _this.state.wordHolder;
+
+      if (word.includes(letter)) {
+        for (var char in word) {
+          if (word[char] === letter) {
+            currentWord[char] = letter;
+          }
+        }
+      } else {
+        guessesLeft--;
+
+        _this.setState({
+          guessesLeft: guessesLeft
+        });
+      }
+
+      _this.setState({
+        wordHolder: currentWord
+      });
+
+      if (guessesLeft === 0) {
+        _this.setState({
+          round: 1
+        });
+
+        _this.shuffle();
+
+        _this.showPicture();
+      }
+
+      if (word === currentWord.join("")) {
+        _this.setState({
+          round: _this.state.round + 1,
+          wordNumber: _this.state.wordNumber + 1
+        });
+
+        setTimeout(_this.showPicture, 1000);
+      }
+    };
+
+    _this.changeTheme = function (theme) {
+      switch (_this.state.theme) {
+        case "harry-potter":
+          _this.setState({
+            theme: "doctor who"
+          });
+
+          break;
+
+        default:
+          _this.setState({
+            theme: "harry potter"
+          });
+
+          break;
+      }
+    };
+
+    _this.nextRound = function () {
+      // this.changeTheme();
+      _this.wordGen(_this.state.wordBank);
+
+      _this.setState({
+        reset: false
+      });
+    };
+
+    _this.showPicture = function () {
+      _this.setState({
+        letterHolder: "show-picture",
+        showPicture: true
+      });
+
+      setTimeout(_this.reset, 3000);
+    };
+
+    _this.reset = function () {
+      _this.setState({
+        reset: true,
+        letterHolder: "letter-holder",
+        showPicture: false,
+        guessesLeft: 6
+      });
+
+      _this.nextRound();
+    };
+
+    _this.shuffle = function () {
+      var wordBank;
+
+      switch (_this.state.theme) {
+        case "doctor-who":
+          wordBank = __webpack_require__(/*! ../../wordData */ "./src/wordData/index.js").doctorWho;
+          break;
+
+        case "harry-potter":
+          wordBank = __webpack_require__(/*! ../../wordData */ "./src/wordData/index.js").harryPotter;
+          break;
+
+        default:
+          wordBank = __webpack_require__(/*! ../../wordData */ "./src/wordData/index.js").doctorWho;
+          break;
+      }
+
+      var wordCount = wordBank.length;
+      var wordSelected;
+      var temp;
+
+      while (wordCount > 0) {
+        wordSelected = Math.floor(Math.random() * wordCount);
+        wordCount--;
+        temp = wordBank[wordCount];
+        wordBank[wordCount] = wordBank[wordSelected];
+        wordBank[wordSelected] = temp;
+      }
+
+      _this.setState({
+        wordBank: wordBank
+      });
+    };
+
+    _this.wordGen = function (words) {
+      var word = words[_this.state.wordNumber].toUpperCase();
+
+      var wordGen = /^[/a-z0-9]*$/i;
+      var blank = "-";
+      var newWord = "";
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = word[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var letter = _step.value;
+          newWord += letter.replace(wordGen, blank);
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      newWord = newWord.split("");
+
+      _this.setState({
+        word: word,
+        image: word.toLowerCase().replace(" ", "-"),
+        wordHolder: newWord
+      });
+    };
+
+    _this.componentDidMount = function () {
+      _this.shuffle();
+
+      setTimeout(_this.nextRound, 10);
+    };
+
+    _this.handleClick = _this.handleClick.bind(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)));
+    _this.wordGen = _this.wordGen.bind(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)));
+    _this.nextRound = _this.nextRound.bind(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)));
+    return _this;
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(GameBoard, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          alphabet = _this$state.alphabet,
+          isFlipped = _this$state.isFlipped,
+          word = _this$state.word,
+          wordHolder = _this$state.wordHolder,
+          theme = _this$state.theme,
+          reset = _this$state.reset,
+          round = _this$state.round,
+          guessesLeft = _this$state.guessesLeft;
+      var topic = theme.toUpperCase().split('');
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Container"], {
+        fluid: true,
+        className: "game-board",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 195
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        className: "game-board-bg",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 196
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-3",
+        className: "".concat(theme.replace(' ', '_'), " side-board"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 197
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        className: "theme-animation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 198
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+        className: "title",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 199
+        },
+        __self: this
+      }, topic)), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        className: "score-board",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 201
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-12",
+        className: "score-board-text",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 202
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 203
+        },
+        __self: this
+      }, "Round: ", round), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 204
+        },
+        __self: this
+      }, "Guesses Left: ", guessesLeft))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        className: "change-theme",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 207
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-12",
+        className: "theme-select",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 208
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+        className: theme.replace(' ', '-'),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 209
+        },
+        __self: this
+      }, "Change Themes")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-9",
+        className: "alpha-town",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 213
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        className: "word-space",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 214
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-12",
+        className: "red",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 215
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_WordSpace__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        theme: theme.replace(' ', '_'),
+        wordGen: this.wordGen,
+        nextRound: this.nextRound,
+        word: word,
+        wordHolder: wordHolder,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 216
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+        size: "sm-12",
+        className: "orange",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 226
+        },
+        __self: this
+      }, alphabet.map(function (letter) {
+        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_LetterTiles_Card__WEBPACK_IMPORTED_MODULE_11__["default"], {
+          key: letter,
+          onClick: _this2.handleClick,
+          isFlipped: isFlipped,
+          word: word,
+          letter: letter,
+          wordGen: _this2.wordGen,
+          reset: reset,
+          letterHolder: _this2.state.letterHolder,
+          showPicture: _this2.state.showPicture,
+          image: _this2.state.image,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 228
+          },
+          __self: this
+        }, letter);
+      }))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_7__["ThemeModal"], {
+        themes: this.state.themes,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 247
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return GameBoard;
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/GameBoard/Theme.css":
+/*!********************************************!*\
+  !*** ./src/components/GameBoard/Theme.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Theme.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/Theme.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Theme.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/Theme.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Theme.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/GameBoard/Theme.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/GameBoard/WordSpace.jsx":
+/*!************************************************!*\
+  !*** ./src/components/GameBoard/WordSpace.jsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WordSpace; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../CPManager */ "./src/CPManager.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\GameBoard\\WordSpace.jsx";
+
+
+
+var WordSpace =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(WordSpace, _Component);
+
+  function WordSpace() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, WordSpace);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(WordSpace).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(WordSpace, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+        className: this.props.theme ? this.props.theme : 'default',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "current-word",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, this.props.wordHolder));
+    }
+  }]);
+
+  return WordSpace;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/Grid/index.jsx":
+/*!***************************************!*\
+  !*** ./src/components/Grid/index.jsx ***!
+  \***************************************/
+/*! exports provided: Container, Row, Col */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return Row; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Col", function() { return Col; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\Grid\\index.jsx";
+
+var Container =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Container, _Component);
+
+  function Container() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Container);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Container).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Container, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "container".concat(this.props.fluid ? "-fluid" : "", " ").concat(this.props.className ? this.props.className : ''),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return Container;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+var Row =
+/*#__PURE__*/
+function (_Component2) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Row, _Component2);
+
+  function Row() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Row);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Row).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Row, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row".concat(this.props.fluid ? "-fluid" : "", " ").concat(this.props.className ? this.props.className : ''),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return Row;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+var Col =
+/*#__PURE__*/
+function (_Component3) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Col, _Component3);
+
+  function Col() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Col);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Col).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Col, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "".concat(this.props.className, " ").concat(this.props.size.split(" ").map(function (size) {
+          return "col-" + size;
+        }).join(" ")),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return Col;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/Card.css":
+/*!*********************************************!*\
+  !*** ./src/components/LetterTiles/Card.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/Card.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/Card.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/Card.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/Card.jsx":
+/*!*********************************************!*\
+  !*** ./src/components/LetterTiles/Card.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LetterTile; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CardFront__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CardFront */ "./src/components/LetterTiles/CardFront.jsx");
+/* harmony import */ var _CardBack__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardBack */ "./src/components/LetterTiles/CardBack.jsx");
+/* harmony import */ var _CardContent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CardContent */ "./src/components/LetterTiles/CardContent.jsx");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\LetterTiles\\Card.jsx";
+
+
+
+
+
+var LetterTile =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(LetterTile, _Component);
+
+  function LetterTile() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, LetterTile);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(LetterTile)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this.state = {
+      isFlipped: false
+    };
+
+    _this.onClick = function () {
+      _this.setState({
+        isFlipped: true
+      });
+
+      _this.props.onClick(_this.props.letter);
+    };
+
+    return _this;
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(LetterTile, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.reset !== prevProps.reset) {
+        if (this.props.reset && this.state.isFlipped) {
+          this.setState({
+            isFlipped: false
+          });
+        }
+      } else if (this.props.showPicture !== prevProps.showPicture) {
+        this.setState({
+          isFlipped: true
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var frontORback = this.state.isFlipped ? "flipped" : "";
+      var letterHolder = this.props.letterHolder;
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CardContent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        className: "".concat(frontORback, " ").concat(letterHolder),
+        letter: this.props.letter,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CardFront__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        onClick: this.onClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "letters",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, this.props.letter)), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CardBack__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        letter: "".concat(this.props.letter, " ").concat(this.props.image),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return LetterTile;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/CardBack.jsx":
+/*!*************************************************!*\
+  !*** ./src/components/LetterTiles/CardBack.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\LetterTiles\\CardBack.jsx";
+
+
+var CardBack =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(CardBack, _Component);
+
+  function CardBack() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CardBack);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(CardBack).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CardBack, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "back ".concat(this.props.letter),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return CardBack;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (CardBack);
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/CardContent.jsx":
+/*!****************************************************!*\
+  !*** ./src/components/LetterTiles/CardContent.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Card.css */ "./src/components/LetterTiles/Card.css");
+/* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Card_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _ImageCatalogue_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ImageCatalogue.css */ "./src/components/LetterTiles/ImageCatalogue.css");
+/* harmony import */ var _ImageCatalogue_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_ImageCatalogue_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\LetterTiles\\CardContent.jsx";
+
+
+
+
+var CardContent =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(CardContent, _Component);
+
+  function CardContent() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CardContent);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(CardContent).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CardContent, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: this.props.className,
+        letter: this.props.letter,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return CardContent;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (CardContent);
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/CardFront.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/LetterTiles/CardFront.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\LetterTiles\\CardFront.jsx";
+
+
+var CardFront =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(CardFront, _Component);
+
+  function CardFront() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, CardFront);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(CardFront).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CardFront, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "front",
+        onClick: this.props.onClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return CardFront;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (CardFront);
+
+/***/ }),
+
+/***/ "./src/components/LetterTiles/ImageCatalogue.css":
+/*!*******************************************************!*\
+  !*** ./src/components/LetterTiles/ImageCatalogue.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./ImageCatalogue.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/ImageCatalogue.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./ImageCatalogue.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/ImageCatalogue.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./ImageCatalogue.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/LetterTiles/ImageCatalogue.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/Modals/ThemeModal.jsx":
+/*!**********************************************!*\
+  !*** ./src/components/Modals/ThemeModal.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ThemeModal; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../CPManager */ "./src/CPManager.js");
+/* harmony import */ var _Themes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Themes */ "./src/components/Modals/Themes.jsx");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\Modals\\ThemeModal.jsx";
+
+
+
+
+var ThemeModal =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(ThemeModal, _Component);
+
+  function ThemeModal() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ThemeModal);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ThemeModal).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ThemeModal, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+        className: "".concat(this.props.showModal ? 'show-modal' : '', " modal"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, this.props.themes.map(function (theme) {
+        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Themes__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          theme: theme,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          },
+          __self: this
+        });
+      }));
+    }
+  }]);
+
+  return ThemeModal;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/components/Modals/Themes.jsx":
+/*!******************************************!*\
+  !*** ./src/components/Modals/Themes.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Themes; });
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../CPManager */ "./src/CPManager.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\components\\Modals\\Themes.jsx";
+
+
+
+var Themes =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Themes, _Component);
+
+  function Themes() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Themes);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Themes).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Themes, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+        size: "sm-4",
+        className: "themes",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, this.props.theme));
+    }
+  }]);
+
+  return Themes;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/companions.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/Doctor_Who/companions.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/companions.b21f8908.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/cybermen.jpg":
+/*!********************************************!*\
+  !*** ./src/images/Doctor_Who/cybermen.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/cybermen.e11495d1.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/dalek.jpg":
+/*!*****************************************!*\
+  !*** ./src/images/Doctor_Who/dalek.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/dalek.6378949d.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/david_tennant.jpg":
+/*!*************************************************!*\
+  !*** ./src/images/Doctor_Who/david_tennant.jpg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/david_tennant.0ab92ba4.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/doctorwho.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/Doctor_Who/doctorwho.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/doctorwho.5f8a7014.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/gallifrey.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/Doctor_Who/gallifrey.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/gallifrey.991e5b13.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/matt_smith.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/Doctor_Who/matt_smith.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/matt_smith.132bec13.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/tardis.jpg":
+/*!******************************************!*\
+  !*** ./src/images/Doctor_Who/tardis.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/tardis.b346b1ce.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/the_master.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/Doctor_Who/the_master.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/the_master.7c674334.jpg";
+
+/***/ }),
+
+/***/ "./src/images/Doctor_Who/time_lord.jpg":
+/*!*********************************************!*\
+  !*** ./src/images/Doctor_Who/time_lord.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/time_lord.8014df1e.jpg";
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\index.js";
+
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_5__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/pages/Landing.jsx":
+/*!*******************************!*\
+  !*** ./src/pages/Landing.jsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _CPManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../CPManager */ "./src/CPManager.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\adam\\Desktop\\Personal Projects\\word-lift\\client\\src\\pages\\Landing.jsx";
+
+
+
+var Landing =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Landing, _Component);
+
+  function Landing() {
+    Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Landing);
+
+    return Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Landing).apply(this, arguments));
+  }
+
+  Object(C_Users_adam_Desktop_Personal_Projects_word_lift_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Landing, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Container"], {
+        fluid: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_CPManager__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+        className: "hot",
+        size: "md-2 lg-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, "Hello World")));
+    }
+  }]);
+
+  return Landing;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Landing);
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read http://bit.ly/CRA-PWA
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) { var publicUrl; }
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(function (registration) {
+    registration.onupdatefound = function () {
+      var installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = function () {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See http://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(function (error) {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(function (response) {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    var contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.unregister().then(function () {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(function () {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/wordData/DoctorWho.js":
+/*!***********************************!*\
+  !*** ./src/wordData/DoctorWho.js ***!
+  \***********************************/
+/*! exports provided: doctorWho */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "doctorWho", function() { return doctorWho; });
+var doctorWho = ['Doctor Who', 'David Tennant', 'Matt Smith', 'TARDIS', 'Daleks', 'Cybermen', 'The Master', 'Companion', 'Gallifrey', 'Time Lord'];
+
+/***/ }),
+
+/***/ "./src/wordData/HarryPotter.js":
+/*!*************************************!*\
+  !*** ./src/wordData/HarryPotter.js ***!
+  \*************************************/
+/*! exports provided: harryPotter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "harryPotter", function() { return harryPotter; });
+var harryPotter = ['Harry Potter', 'Sirius Black', 'Albus Dumbledore', 'J. K. Rowling', 'Wizard', 'Hermione Granger', 'Ron Weasley', 'Hogwarts', 'Lord Voldemort', 'Ministry of Magic', 'Muggles', 'Rubeus Hagrid', 'Severus Snape', 'Draco Malfoy', 'Quirinus Quirrell', "Philospher's Stone", 'Ginny Weasley', 'Basilisk', 'Gilderoy Lockhart', 'Parsleytongue', 'Dark Arts', 'Remus Lupin', 'Werewolf', 'Peter Pettigrew', 'Alastor "Mad-Eye" Moody', 'Barty Crouch, Jr', 'Cedric Diggory', 'Order of the Phoenix', 'Dolores Umbridge', "Dumbledore's Army", 'Cho Chang', 'Ministry of Magic', 'Lavender Brown', 'Horace Slughorn', 'Pensieve', 'Horcruxes'];
+
+/***/ }),
+
+/***/ "./src/wordData/index.js":
+/*!*******************************!*\
+  !*** ./src/wordData/index.js ***!
+  \*******************************/
+/*! exports provided: doctorWho, harryPotter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _DoctorWho__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DoctorWho */ "./src/wordData/DoctorWho.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "doctorWho", function() { return _DoctorWho__WEBPACK_IMPORTED_MODULE_0__["doctorWho"]; });
+
+/* harmony import */ var _HarryPotter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HarryPotter */ "./src/wordData/HarryPotter.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "harryPotter", function() { return _HarryPotter__WEBPACK_IMPORTED_MODULE_1__["harryPotter"]; });
+
+
+
+
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\adam\Desktop\Personal Projects\word-lift\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\adam\Desktop\Personal Projects\word-lift\client\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "../../CPManager";
+import { Container, Row, Col, ThemeModal } from "../../CPManager";
 import "./GameBoard.css";
 import "./Theme.css";
 import WordSpace from "./WordSpace";
@@ -11,11 +11,13 @@ export default class GameBoard extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.wordGen = this.wordGen.bind(this);
     this.nextRound = this.nextRound.bind(this);
+    this.changeTheme = this.changeTheme.bind(this);
   }
   state = {
     word: "",
     wordHolder: "",
     theme: "doctor who",
+    themes: ['doctor who', 'pokemon', 'harry potter'],
     alphabet: [
       "A",
       "B",
@@ -51,7 +53,8 @@ export default class GameBoard extends Component {
     image: "",
     wordNumber: 0,
     round: 1,
-    guessesLeft: 6
+    guessesLeft: 6,
+    showModal: false
   };
 
   handleClick = letter => {
@@ -60,18 +63,35 @@ export default class GameBoard extends Component {
   };
 
   checkGuess = letter => {
+    let guessesLeft = this.state.guessesLeft
     let word = this.state.word;
     let currentWord = this.state.wordHolder;
-    for (let char in word) {
-      if (word[char] === letter) {
-        currentWord[char] = letter;
+      if (word.includes(letter)){
+        for (let char in word) {
+          if (word[char] === letter) {
+            currentWord[char] = letter;
+          }
+        }
+      } else {
+        guessesLeft--
+        this.setState({
+          guessesLeft: guessesLeft
+        })
       }
-    }
+    
     this.setState({
       wordHolder: currentWord
     });
+    if (guessesLeft === 0){
+      this.setState({
+        round: 1
+      })
+      this.shuffle()
+      this.showPicture()
+    }
     if (word === currentWord.join("")) {
       this.setState({
+        round: this.state.round + 1,
         wordNumber: (this.state.wordNumber + 1)
       })
       setTimeout(this.showPicture, 1000);
@@ -79,18 +99,22 @@ export default class GameBoard extends Component {
   };
 
   changeTheme = theme => {
+    console.log(theme)
     switch (this.state.theme) {
-      case "harry-potter":
-        this.setState({
-          theme: "doctor who"
-        });
-        break;
-      default:
+      case "harry potter":
         this.setState({
           theme: "harry potter"
         });
         break;
+      default:
+        this.setState({
+          theme: "doctor who"
+        });
+        break;
     }
+    this.setState({
+      showModal: false
+    })
   };
 
   nextRound = () => {
@@ -113,7 +137,8 @@ export default class GameBoard extends Component {
     this.setState({
       reset: true,
       letterHolder: "letter-holder",
-      showPicture: false
+      showPicture: false,
+      guessesLeft: 6
     });
     this.nextRound();
   };
@@ -163,6 +188,12 @@ export default class GameBoard extends Component {
     });
   };
 
+  showModal = () => {
+    this.setState({
+      showModal: true
+    })
+  }
+
   componentDidMount = () => {
     this.shuffle()
     setTimeout(this.nextRound, 10)
@@ -171,11 +202,10 @@ export default class GameBoard extends Component {
   render() {
     const { alphabet, isFlipped, word, wordHolder, theme, reset, round, guessesLeft } = this.state;
     let topic = theme.toUpperCase().split('')
-    console.log(topic)
 
     return (
       <Container fluid className="game-board">
-        <Row>
+        <Row className='game-board-bg'>
           <Col size="sm-3" className={`${theme.replace(' ', '_')} side-board`}>
             <Row className='theme-animation'>
             <p className={`title`}>{topic}</p>
@@ -188,7 +218,7 @@ export default class GameBoard extends Component {
             </Row>
             <Row className='change-theme'>
                 <Col size='sm-12' className='theme-select'>
-                  <p className={theme.replace(' ', '-')}>Change Themes</p>
+                  <p onClick={this.showModal} className={theme.replace(' ', '-')}>Change Themes</p>
                 </Col>
             </Row>
           </Col>
@@ -226,6 +256,7 @@ export default class GameBoard extends Component {
             </Row>
           </Col>
         </Row>
+        <ThemeModal showModal={this.state.showModal} themes={this.state.themes} onClick={this.changeTheme}/>
       </Container>
     );
   }
