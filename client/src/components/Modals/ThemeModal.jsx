@@ -15,9 +15,6 @@ export default class ThemeModal extends Component {
                         <Themes theme={theme} onClick={this.props.onClick}/>
                         ))}
                 </Row>
-                <Row className=''>
-                    <p onClick={this.props.goBack}>Go Back</p>
-                </Row>
             </Container>
         )
     }

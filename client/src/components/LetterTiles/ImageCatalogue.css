@@ -37,3 +37,53 @@
 .flipped > .companion{
     background-image: url('../../images/Doctor_Who/companions.jpg');
 }
+
+/* Harry Potter */
+
+.flipped > .harry-potter {
+    background-image: url('../../images/Harry_Potter/harry.jpg')
+}
+
+.flipped > .sirius-black {
+    background-image: url('../../images/Harry_Potter/siruis_black.jpg')
+}
+
+.flipped > .albus-dumbledore {
+    background-image: url('../../images/Harry_Potter/dumbledore.jpg')
+}
+
+.flipped > .wizard {
+    background-image: url('../../images/Harry_Potter/wizard.jpg')
+}
+
+.flipped > .hermione-granger {
+    background-image: url('../../images/Harry_Potter/hermione_granger.jpg')
+}
+
+.flipped > .ron-weasley {
+    background-image: url('../../images/Harry_Potter/ron_weasley.jpg')
+}
+
+.flipped > .hogwarts {
+    background-image: url('../../images/Harry_Potter/hogwarts.jpg')
+}
+
+.flipped > .lord-voldemort {
+    background-image: url('../../images/Harry_Potter/lord_voldermorte.jpg')
+}
+
+
+/* Pokemon */
+
+
+.flipped > .pikachu {
+    background-image: url('../../images/Pokemon/pikachu.jpg')
+}
+
+.flipped > .squirtle {
+    background-image: url('../../images/Pokemon/squirtle.png')
+}
+
+.flipped > .charzard{
+    background-image: url('../../images/Pokemon/charzard.jpg')
+}
