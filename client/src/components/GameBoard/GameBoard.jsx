@@ -66,23 +66,23 @@ export default class GameBoard extends Component {
     let guessesLeft = this.state.guessesLeft
     let word = this.state.word;
     let currentWord = this.state.wordHolder;
-      if (word.includes(letter)){
-        for (let char in word) {
-          if (word[char] === letter) {
-            currentWord[char] = letter;
-          }
+    if (word.includes(letter)) {
+      for (let char in word) {
+        if (word[char] === letter) {
+          currentWord[char] = letter;
         }
-      } else {
-        guessesLeft--
-        this.setState({
-          guessesLeft: guessesLeft
-        })
       }
-    
+    } else {
+      guessesLeft--
+      this.setState({
+        guessesLeft: guessesLeft
+      })
+    }
+
     this.setState({
       wordHolder: currentWord
     });
-    if (guessesLeft === 0){
+    if (guessesLeft === 0) {
       this.setState({
         round: 1
       })
@@ -102,27 +102,23 @@ export default class GameBoard extends Component {
     console.log(theme)
     switch (theme) {
       case "harry potter":
-      console.log('changing theme to harry potter')
-        this.setState({
-          theme: "harry potter"
-        });
+        console.log('changing theme to harry potter')
+        theme = 'harry potter'
         break;
       case "pokemon":
-      console.log('changing theme to pokemon')
-        this.setState({
-          theme: "pokemon"
-        })
+        console.log('changing theme to pokemon')
+        theme = 'pokemon'
         break;
-      default:
-      console.log('defaulting theme')
-        this.setState({
-          theme: "doctor who"
-        });
+      case 'doctor who':
+        console.log('defaulting theme')
+        theme = 'doctor who'
         break;
     }
     this.setState({
-      showModal: false
+      showModal: false,
+      theme: theme
     })
+    this.shuffle(theme)
   };
 
   nextRound = () => {
@@ -150,23 +146,27 @@ export default class GameBoard extends Component {
     this.nextRound();
   };
 
-  shuffle = () => {
+  shuffle = (theme) => {
+    console.log(theme)
+    if (!theme){
+      theme = 'doctor who'
+    }
     let wordBank;
-    switch (this.state.theme) {
-      case "doctor-who":
-          wordBank = require("../../wordData").doctorWho
+    switch (theme) {
+      case "doctor who":
+        wordBank = require("../../wordData").doctorWho
         break;
-      case "harry-potter":
-          wordBank = require("../../wordData").harryPotter
+      case "harry potter":
+        wordBank = require("../../wordData").harryPotter
         break;
-      default:
-          wordBank = require("../../wordData").doctorWho
+      case "pokemon":
+        wordBank = require("../../wordData").pokemon
         break;
     }
     var wordCount = wordBank.length;
     var wordSelected;
     var temp;
-    
+
     while (wordCount > 0) {
       wordSelected = Math.floor(Math.random() * wordCount);
       wordCount--;
@@ -177,6 +177,8 @@ export default class GameBoard extends Component {
     this.setState({
       wordBank: wordBank
     });
+    console.log(this.state.wordBank)
+    setTimeout(this.reset, 10)
   };
 
   wordGen = words => {
@@ -203,7 +205,6 @@ export default class GameBoard extends Component {
 
   componentDidMount = () => {
     this.shuffle()
-    setTimeout(this.nextRound, 10)
   };
 
   render() {
@@ -216,7 +217,7 @@ export default class GameBoard extends Component {
           <Col size="sm-3" className={`${theme.replace(' ', '_')} side-board`}>
             <Row className='theme-animation'>
               <Col size='sm-12'>
-            <p className={`title`}>{topic}</p>
+                <p className={`title`}>{topic}</p>
               </Col>
             </Row>
             <Row className='score-board'>
@@ -226,9 +227,9 @@ export default class GameBoard extends Component {
               </Col>
             </Row>
             <Row className='change-theme'>
-                <Col size='sm-12' className='theme-select'>
-                  <p onClick={this.showModal} className={theme.replace(' ', '-')}>Change Themes</p>
-                </Col>
+              <Col size='sm-12' className='theme-select'>
+                <p onClick={this.showModal} className={theme.replace(' ', '-')}>Change Themes</p>
+              </Col>
             </Row>
           </Col>
           <Col size="sm-9" className="alpha-town">
@@ -265,7 +266,7 @@ export default class GameBoard extends Component {
             </Row>
           </Col>
         </Row>
-        <ThemeModal showModal={this.state.showModal} theme={this.state.theme} themes={this.state.themes} onClick={this.changeTheme}/>
+        <ThemeModal showModal={this.state.showModal} theme={this.state.theme} themes={this.state.themes} onClick={this.changeTheme} />
       </Container>
     );
   }
