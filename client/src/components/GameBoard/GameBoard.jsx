@@ -100,13 +100,21 @@ export default class GameBoard extends Component {
 
   changeTheme = theme => {
     console.log(theme)
-    switch (this.state.theme) {
+    switch (theme) {
       case "harry potter":
+      console.log('changing theme to harry potter')
         this.setState({
           theme: "harry potter"
         });
         break;
+      case "pokemon":
+      console.log('changing theme to pokemon')
+        this.setState({
+          theme: "pokemon"
+        })
+        break;
       default:
+      console.log('defaulting theme')
         this.setState({
           theme: "doctor who"
         });
@@ -118,7 +126,6 @@ export default class GameBoard extends Component {
   };
 
   nextRound = () => {
-    // this.changeTheme();
     this.wordGen(this.state.wordBank);
     this.setState({
       reset: false
@@ -208,7 +215,9 @@ export default class GameBoard extends Component {
         <Row className='game-board-bg'>
           <Col size="sm-3" className={`${theme.replace(' ', '_')} side-board`}>
             <Row className='theme-animation'>
+              <Col size='sm-12'>
             <p className={`title`}>{topic}</p>
+              </Col>
             </Row>
             <Row className='score-board'>
               <Col size='sm-12' className='score-board-text'>
@@ -256,7 +265,7 @@ export default class GameBoard extends Component {
             </Row>
           </Col>
         </Row>
-        <ThemeModal showModal={this.state.showModal} themes={this.state.themes} onClick={this.changeTheme}/>
+        <ThemeModal showModal={this.state.showModal} theme={this.state.theme} themes={this.state.themes} onClick={this.changeTheme}/>
       </Container>
     );
   }

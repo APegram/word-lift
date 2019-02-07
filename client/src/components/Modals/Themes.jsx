@@ -3,11 +3,15 @@ import { Col } from '../../CPManager'
 
 export default class Themes extends Component {
     
+    onClick = () => {
+        this.props.onClick(this.props.theme)
+    }
+
 
     render(){
         const theme = this.props.theme.replace(' ', '-')
         return (
-            <Col size='sm-4' onClick={this.props.onClick} className={`${theme} themes`}/>
+            <div onClick={this.onClick} className={`${theme} themes`}/>
         )
     }
 }
