@@ -86,8 +86,7 @@ export default class GameBoard extends Component {
       this.setState({
         round: 1
       })
-      this.shuffle()
-      this.showPicture()
+      this.showPicture('reset')
     }
     if (word === currentWord.join("")) {
       this.setState({
@@ -99,18 +98,14 @@ export default class GameBoard extends Component {
   };
 
   changeTheme = theme => {
-    console.log(theme)
     switch (theme) {
       case "harry potter":
-        console.log('changing theme to harry potter')
         theme = 'harry potter'
         break;
       case "pokemon":
-        console.log('changing theme to pokemon')
         theme = 'pokemon'
         break;
       case 'doctor who':
-        console.log('defaulting theme')
         theme = 'doctor who'
         break;
     }
@@ -128,12 +123,16 @@ export default class GameBoard extends Component {
     });
   };
 
-  showPicture = () => {
+  showPicture = (reset) => {
     this.setState({
       letterHolder: "show-picture",
       showPicture: true
     });
-    setTimeout(this.reset, 3000);
+    if (reset){
+      setTimeout(this.shuffle, 2990)
+    } else {
+      setTimeout(this.reset, 3000);
+    }
   };
 
   reset = () => {
@@ -147,9 +146,8 @@ export default class GameBoard extends Component {
   };
 
   shuffle = (theme) => {
-    console.log(theme)
     if (!theme){
-      theme = 'doctor who'
+      theme = this.state.theme
     }
     let wordBank;
     switch (theme) {
@@ -175,13 +173,16 @@ export default class GameBoard extends Component {
       wordBank[wordSelected] = temp;
     }
     this.setState({
-      wordBank: wordBank
+      wordBank: wordBank,
+      wordNumber: 0
     });
-    console.log(this.state.wordBank)
     setTimeout(this.reset, 10)
   };
 
   wordGen = words => {
+    if (this.state.wordNumber === words.length){
+      return this.shuffle()
+    }
     let word = words[this.state.wordNumber].toUpperCase()
     const wordGen = /^[/a-z0-9]*$/i;
     const blank = "-";
