@@ -12,7 +12,7 @@ export default class ThemeModal extends Component {
             <Container fluid>
                 <Row className={`${this.props.showModal ? 'show-modal' : ''} modal`}>
                     {this.props.themes.map(theme => (
-                        <Themes theme={theme} onClick={this.props.onClick}/>
+                        <Themes key={theme} theme={theme} onClick={this.props.onClick}/>
                         ))}
                 </Row>
             </Container>

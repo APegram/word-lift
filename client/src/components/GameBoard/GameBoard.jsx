@@ -108,6 +108,9 @@ export default class GameBoard extends Component {
       case 'doctor who':
         theme = 'doctor who'
         break;
+      default:
+        theme = 'doctor who'
+        break;
     }
     this.setState({
       showModal: false,
@@ -159,6 +162,9 @@ export default class GameBoard extends Component {
         break;
       case "pokemon":
         wordBank = require("../../wordData").pokemon
+        break;
+      default:
+        wordBank = require("../../wordData").doctorWho
         break;
     }
     var wordCount = wordBank.length;
@@ -235,7 +241,7 @@ export default class GameBoard extends Component {
           </Col>
           <Col size="sm-9" className="alpha-town">
             <Row className="word-space">
-              <Col size="sm-12" className="red">
+              <Col size="sm-12" className="current-word">
                 <WordSpace
                   theme={theme.replace(' ', '_')}
                   wordGen={this.wordGen}
@@ -246,7 +252,7 @@ export default class GameBoard extends Component {
               </Col>
             </Row>
             <Row>
-              <Col size="sm-12" className="orange">
+              <Col size="sm-12" className="letter-grid">
                 {alphabet.map(letter => (
                   <LetterTile
                     key={letter}

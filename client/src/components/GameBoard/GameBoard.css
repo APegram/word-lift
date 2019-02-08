@@ -1,11 +1,11 @@
-.word-space > .red {
+.word-space > .current-word {
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.row > .orange {
+.row > .letter-grid {
     height: 70vh;
     display: flex;
     flex-wrap: wrap;
