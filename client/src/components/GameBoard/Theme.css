@@ -1,17 +1,14 @@
 .doctor_who {
-  font-size: 28px;
   margin-bottom: 0;
   font-family: "Righteous", cursive;
 }
 
 .pokemon {
-  font-size: 28px;
   margin-bottom: 0;
   font-family: 'Bangers', cursive;
 }
 
 .harry_potter {
-  font-size: 28px;
   margin-bottom: 0;
   font-family: 'Cinzel Decorative', cursive;
 }
@@ -21,6 +18,8 @@
 .title {
   -webkit-animation: color-change 24s infinite alternate;
   text-align: center;
+  font-size: 36px;
+  line-height: 1em
 }
 
 @-webkit-keyframes color-change {

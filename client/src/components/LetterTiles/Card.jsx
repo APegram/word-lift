@@ -32,7 +32,7 @@ export default class LetterTile extends Component {
     let letterHolder = this.props.letterHolder
 
     return (      
-      <CardContent className={`${frontORback} ${letterHolder}`} letter={this.props.letter}>
+      <CardContent className={`${frontORback} ${letterHolder} ${this.props.letter}`} letter={this.props.letter}>
           <CardFront onClick={this.onClick}>
             <p className='letters'>{this.props.letter}</p>
           </CardFront>

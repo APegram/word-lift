@@ -48,13 +48,13 @@ export default class GameBoard extends Component {
     ],
     reset: false,
     wordBank: [],
-    letterHolder: "letter-holder",
     showPicture: false,
     image: "",
     wordNumber: 0,
     round: 1,
     guessesLeft: 6,
-    showModal: false
+    showModal: false,
+    letterHolder: 'letter-holder'
   };
 
   handleClick = letter => {
@@ -215,12 +215,13 @@ export default class GameBoard extends Component {
   };
 
   render() {
-    const { alphabet, isFlipped, word, wordHolder, theme, reset, round, guessesLeft } = this.state;
+    const { alphabet, isFlipped, word, wordHolder, theme, reset, round, guessesLeft, letterHolder } = this.state;
     let topic = theme.toUpperCase().split('')
+    let currentTheme = theme.replace(' ', '_')
 
     return (
       <Container fluid className="game-board">
-        <Row className='game-board-bg'>
+        <Row className={currentTheme}>
           <Col size="sm-3" className={`${theme.replace(' ', '_')} side-board`}>
             <Row className='theme-animation'>
               <Col size='sm-12'>
@@ -228,14 +229,14 @@ export default class GameBoard extends Component {
               </Col>
             </Row>
             <Row className='score-board'>
-              <Col size='sm-12' className='score-board-text'>
+              <Col size='sm-12' className={`${currentTheme} score-board-text`}>
                 <p>Round: {round}</p>
                 <p>Guesses Left: {guessesLeft}</p>
               </Col>
             </Row>
             <Row className='change-theme'>
               <Col size='sm-12' className='theme-select'>
-                <p onClick={this.showModal} className={theme.replace(' ', '-')}>Change Themes</p>
+                <p onClick={this.showModal} className={currentTheme}>Change Themes</p>
               </Col>
             </Row>
           </Col>
@@ -252,7 +253,7 @@ export default class GameBoard extends Component {
               </Col>
             </Row>
             <Row>
-              <Col size="sm-12" className="letter-grid">
+              <Col size="sm-12" className={`letter-grid ${currentTheme}`}>
                 {alphabet.map(letter => (
                   <LetterTile
                     key={letter}
@@ -262,7 +263,7 @@ export default class GameBoard extends Component {
                     letter={letter}
                     wordGen={this.wordGen}
                     reset={reset}
-                    letterHolder={this.state.letterHolder}
+                    letterHolder={letterHolder}
                     showPicture={this.state.showPicture}
                     image={this.state.image}
                   >

@@ -32,9 +32,54 @@
 
 .letter-holder > .front,
 .show-picture > .front{
-  background-color: rgb(50, 112, 186);
   align-items: center;
   justify-content: center;
+}
+
+.doctor_who > .letter-holder > .front {
+  background-color: rgb(50, 112, 186);
+}
+
+.pokemon > .letter-holder > .front {
+  background-color: rgb(194, 24, 7)
+}
+
+.harry_potter > .A > .front,
+.harry_potter > .E > .front,
+.harry_potter > .I > .front,
+.harry_potter > .M > .front,
+.harry_potter > .Q > .front,
+.harry_potter > .U > .front,
+.harry_potter > .Y > .front {
+    background: linear-gradient(-45deg, rgb(178, 34, 0) 70%, rgb(178, 34, 0), gold 10%);
+}
+
+.harry_potter > .B > .front,
+.harry_potter > .F > .front,
+.harry_potter > .J > .front,
+.harry_potter > .N > .front,
+.harry_potter > .R > .front,
+.harry_potter > .V > .front,
+.harry_potter > .Z > .front {
+  background: linear-gradient(-135deg, #000A90 70%, #000A90,  #946B2D 10%)
+}
+
+.harry_potter > .C > .front,
+.harry_potter > .G > .front,
+.harry_potter > .K > .front,
+.harry_potter > .O > .front,
+.harry_potter > .S > .front,
+.harry_potter > .W > .front {
+  background: linear-gradient(45deg, black 70%, black, yellow 10%)
+}
+
+.harry_potter > .D > .front,
+.harry_potter > .H > .front,
+.harry_potter > .L > .front,
+.harry_potter > .P > .front,
+.harry_potter > .T > .front,
+.harry_potter > .X > .front {
+  background: linear-gradient(135deg, #0D6217 70%, #0D6217, #AAAAAA 10%)
 }
 
 .letter-holder > .front,
