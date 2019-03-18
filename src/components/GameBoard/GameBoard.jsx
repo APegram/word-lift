@@ -54,7 +54,7 @@ export default class GameBoard extends Component {
     round: 1,
     guessesLeft: 6,
     showModal: false,
-    letterHolder: 'letter-holder'
+    letterHolder: 'letter-holder',
   };
 
   handleClick = letter => {
@@ -211,6 +211,7 @@ export default class GameBoard extends Component {
   }
 
   componentDidMount = () => {
+      
     this.shuffle()
   };
 
@@ -218,6 +219,7 @@ export default class GameBoard extends Component {
     const { alphabet, isFlipped, word, wordHolder, theme, reset, round, guessesLeft, letterHolder } = this.state;
     let topic = theme.toUpperCase().split('')
     let currentTheme = theme.replace(' ', '_')
+  
 
     return (
       <Container fluid className="game-board">

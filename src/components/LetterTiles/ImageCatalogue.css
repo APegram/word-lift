@@ -87,3 +87,11 @@
 .flipped > .charzard{
     background-image: url('../../images/Pokemon/charzard.jpg')
 }
+
+/* Iphone 6/7/8 Portrait */
+@media screen and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait){
+
+
+}

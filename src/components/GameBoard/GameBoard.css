@@ -102,3 +102,41 @@
 .show-modal{
     display: flex;
 }
+
+/* Iphone 6/7/8 Portrait */
+@media screen and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait){
+        
+    .theme-animation,
+    .score-board,
+    .change-theme {
+        height: 10vh;
+    }
+    
+    .score-board-text,
+    .theme-select > .pokemon,
+    .theme-select > .doctor_who,
+    .theme-select > .harry_potter{
+        font-size: 18px;
+        margin-top: 0;
+    }
+}
+
+/* Iphone 6/7/8 Plus LandScape */
+@media screen and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape){
+    .alpha-town {
+        padding-right: 60px;
+    }
+}
+
+/* Iphone X LandScape */
+@media screen and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (orientation : landscape){
+    .alpha-town {
+        padding-left: 120px;
+    }
+}

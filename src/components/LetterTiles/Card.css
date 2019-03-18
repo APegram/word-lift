@@ -214,3 +214,123 @@
 .Z{
   background-position: -300px -180px;
 }
+
+/* Iphone 6/7/8 Portrait */
+@media screen and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait){
+
+  .letter-holder,
+  .show-picture,
+  .letter-holder > .front,
+  .letter-holder > .back,
+  .show-picture > .back,  
+  .show-picture > .front{
+    width: 60px;
+    height: 60px;
+}
+
+  .A{
+    background-position: 0px 0px;
+  }
+  
+  .B{
+    background-position: -60px 0px;
+  }
+  
+  .C{
+    background-position: -120px 0px;
+  }
+  
+  .D{
+    background-position: -180px 0px;
+  }
+  
+  .E{
+    background-position: -240px -0px;
+  }
+  
+  .F{
+    background-position: 0px -60px;
+  }
+  
+  .G{
+    background-position: -60px -60px;
+  }
+  
+  .H{
+    background-position: -120px -60px;
+  }
+  
+  .I{
+    background-position: -180px -60px;
+  }
+  
+  .J{
+    background-position: -240px -60px;
+  }
+  
+  .K{
+    background-position: 0px -120px;
+  }
+  
+  .L{
+    background-position: -60px -120px;
+  }
+  
+  .M{
+    background-position: -120px -120px
+  }
+  
+  .N{
+    background-position: -180px -120px;
+  }
+  
+  .O{
+    background-position: -240px -120px;
+  }
+  
+  .P{
+    background-position: -0px -180px;
+  }
+  
+  .Q{
+    background-position: -60px -180px;
+  }
+  
+  .R{
+    background-position: -120px -180px;
+  }
+  
+  .S{
+    background-position: -180px -180px;
+  }
+  
+  .T{
+    background-position: -240px -180px;
+  }
+  
+  .U{
+    background-position: -0px -240px;
+  }
+  
+  .V{
+    background-position: -60px -240px;
+  }
+  
+  .W{
+    background-position: -120px -240px;
+  }
+  
+  .X{
+    background-position: -180px -240px;
+  }
+  
+  .Y{
+    background-position: -240px -240px;
+  }
+  
+  .Z{
+    background-position: -120px -300px;
+  }
+}
