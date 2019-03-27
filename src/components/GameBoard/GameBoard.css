@@ -128,15 +128,15 @@ and (orientation : portrait){
 and (max-device-width : 736px)
 and (orientation : landscape){
     .alpha-town {
-        padding-left: 15px;
+        padding-left: 25px;
     }
 }
 
 /* Iphone X LandScape */
-@media screen and (min-device-width : 375px)
+/* @media screen and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (orientation : landscape){
     .alpha-town {
         padding-left: 120px;
     }
-}
+} */
