@@ -334,3 +334,16 @@ and (orientation : portrait){
     background-position: -120px -300px;
   }
 }
+
+@media screen and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape){
+
+    .show-picture{
+        width: 65px;
+        height: 65px;
+        border: none;
+        margin: 0
+    }
+
+}
