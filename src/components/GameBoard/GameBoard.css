@@ -104,8 +104,8 @@
 }
 
 /* Iphone 6/7/8 Portrait */
-@media screen and (min-device-width : 375px)
-and (max-device-width : 667px)
+@media screen 
+and (min-device-width : 375px)
 and (orientation : portrait){
         
     .theme-animation,
@@ -124,8 +124,8 @@ and (orientation : portrait){
 }
 
 /* Iphone 6/7/8 Plus LandScape */
-@media screen and (min-device-width : 414px)
-and (max-device-width : 736px)
+@media screen
+and (min-device-width : 736px)
 and (orientation : landscape){
     .alpha-town {
         padding-left: 25px;
@@ -134,10 +134,10 @@ and (orientation : landscape){
 }
 
 /* Iphone X LandScape */
-/* @media screen and (min-device-width : 375px)
-and (max-device-width : 812px)
+@media screen
+and (min-device-width : 812px)
 and (orientation : landscape){
     .alpha-town {
-        padding-left: 120px;
+        padding-left:70px;
     }
-} */
+}
