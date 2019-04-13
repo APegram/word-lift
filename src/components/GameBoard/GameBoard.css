@@ -129,6 +129,7 @@ and (min-device-width : 736px)
 and (orientation : landscape){
     .alpha-town {
         padding-left: 25px;
+        padding-right: 20px;
     }
 
 }
