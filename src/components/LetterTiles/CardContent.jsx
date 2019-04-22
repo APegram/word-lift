@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "./Card.css";
-import "./ImageCatalogue.css";
+import "./Card.css";z
 
 class CardContent extends Component {
     render() {

@@ -36,7 +36,7 @@ export default class LetterTile extends Component {
           <CardFront onClick={this.onClick}>
             <p className='letters'>{this.props.letter}</p>
           </CardFront>
-          <CardBack letter={`${this.props.letter} ${this.props.image}`}>
+          <CardBack image={this.props.image} theme={this.props.theme}letter={`${this.props.letter}`}>
               
           </CardBack>
       </CardContent>

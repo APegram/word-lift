@@ -199,7 +199,7 @@ export default class GameBoard extends Component {
     newWord = newWord.split("");
     this.setState({
       word: word,
-      image: word.toLowerCase().replace(" ", "-"),
+      image: word.toLowerCase().replace(" ", "_"),
       wordHolder: newWord
     });
   };
@@ -210,8 +210,7 @@ export default class GameBoard extends Component {
     })
   }
 
-  componentDidMount = () => {
-      
+  componentDidMount = () => {     
     this.shuffle()
   };
 
@@ -268,6 +267,7 @@ export default class GameBoard extends Component {
                     letterHolder={letterHolder}
                     showPicture={this.state.showPicture}
                     image={this.state.image}
+                    theme={currentTheme}
                   >
                     {letter}
                   </LetterTile>
