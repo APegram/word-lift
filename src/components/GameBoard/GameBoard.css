@@ -132,7 +132,7 @@ and (orientation : landscape){
         padding-right: 20px;
     }
 
-    row > .letter-grid {
+    .row > .letter-grid {
         padding-left: 55px;
         padding-right: 55px;
     }
