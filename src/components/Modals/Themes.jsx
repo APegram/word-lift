@@ -8,9 +8,25 @@ export default class Themes extends Component {
 
 
     render(){
-        const theme = this.props.theme.replace(' ', '-')
+        let theme = this.props.theme.replace(' ', '_')
+        const themes = {
+            harry_potter: 'images/Harry_Potter/harry_potter.png',
+            doctor_who: 'images/Doctor_Who/doctor_who.jpg',
+            pokemon: 'images/pokemon/Pokemon.png'
+        }
+        switch (theme){
+            case "harry_potter":
+                theme = 'images/Harry_Potter/harry_potter.png'
+                break;
+            case "pokemon":
+                theme = 'images/pokemon.Pokemon.png'
+                break;
+            default:
+                theme = 'images/Doctor_Who/doctor_who.jpg'
+                break;
+        }
         return (
-            <div onClick={this.onClick} className={`${theme} themes`}/>
+            <div onClick={this.onClick} className={`themes`} style={ { backgroundImage: `url(${theme})` } }/>
         )
     }
 }

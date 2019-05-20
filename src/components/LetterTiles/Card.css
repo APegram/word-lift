@@ -335,14 +335,3 @@ and (orientation : portrait){
   }
 }
 
-@media screen
-and (min-device-width : 736px)
-and (orientation : landscape){
-
-    .letter-grid{
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-}
-

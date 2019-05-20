@@ -8,28 +8,9 @@
     width: 33vw
 }
 
-.modal > .doctor-who {
-     background: url('../../images/Doctor_Who/doctor_who.jpg');
-     background-size: 220px, 120px, contain;
-     background-repeat: no-repeat;
-     padding: 0;
-}
-
 .themes > .doctor-who {
     font-size: 32px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 0px;
-}
-
-.modal > .pokemon {
-    background: url('../../images/Pokemon/Pokemon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal > .harry-potter {
-    background: url('../../images/Harry_Potter/harry_potter.png');
-    background-size: contain;
-    background-repeat: no-repeat;
 }

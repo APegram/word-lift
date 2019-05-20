@@ -254,7 +254,7 @@ export default class GameBoard extends Component {
               </Col>
             </Row>
             <Row>
-              <Col size="sm-12" className={`letter-grid ${currentTheme}`}>
+              <Col size="sm-12" className={`letter-grid ${currentTheme}`} style={currentTheme === 'harry_potter' ? { backgroundImage: `url(images/Harry_Potter/map.gif)` } : {} }>
                 {alphabet.map(letter => (
                   <LetterTile
                     key={letter}
