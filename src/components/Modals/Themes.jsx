@@ -16,10 +16,10 @@ export default class Themes extends Component {
         }
         switch (theme){
             case "harry_potter":
-                theme = 'images/Harry_Potter/harry_potter.png'
+                theme = 'images/Harry_Potter/Harry_Potter.jpg'
                 break;
             case "pokemon":
-                theme = 'images/pokemon.Pokemon.png'
+                theme = 'images/pokemon/Pokemon.png'
                 break;
             default:
                 theme = 'images/Doctor_Who/doctor_who.jpg'

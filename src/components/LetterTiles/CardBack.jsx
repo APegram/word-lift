@@ -9,3 +9,5 @@ class CardBack extends Component {
 }
 
 export default CardBack
+
+//try doing images and a letter div, overlapping via position absolute in one div?
